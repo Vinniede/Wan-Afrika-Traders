@@ -21,8 +21,10 @@ import {
 import { SectionHeader } from '../../components/common/SectionHeader';
 import { ProductCard } from '../../components/products/ProductCard';
 import { CTASection } from '../../components/common/CTASection';
+import { Testimonials } from '../../components/common/Testimonials';
 import { useCatalogue } from '../../hooks/useCatalogue';
 import { productService } from '../../services/productService';
+import { testimonials } from '../../data/testimonials';
 import type { Product } from '../../types';
 
 export const Home = () => {
@@ -307,6 +309,8 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      <Testimonials testimonials={testimonials} />
 
       <CTASection
         title="Ready to Transform Your Water Solutions?"

@@ -4,7 +4,9 @@ import { motion } from 'framer-motion';
 import { HeroSection } from '../../components/common/HeroSection';
 import { SectionHeader } from '../../components/common/SectionHeader';
 import { CTASection } from '../../components/common/CTASection';
+import { Partners } from '../../components/common/Partners';
 import { FaHeart, FaBullseye, FaEye, FaLightbulb, FaUsers, FaAward } from 'react-icons/fa6';
+import { partners } from '../../data/partners';
 
 export const About = () => {
   const [stats, setStats] = useState({
@@ -276,6 +278,9 @@ export const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Partners Section */}
+      <Partners partners={partners} />
 
       {/* CTA Section */}
       <CTASection

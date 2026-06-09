@@ -1,4 +1,4 @@
-import { FaComment } from 'react-icons/fa6';
+import { FaWhatsapp } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { CONTACT_INFO } from '../../constants/contact';
 
@@ -21,7 +21,7 @@ export const FloatingWhatsAppButton = () => {
       className="fixed bottom-8 right-8 z-40 bg-green-500 text-white rounded-full p-4 shadow-water hover:shadow-glow transition-shadow"
       aria-label="Contact us on WhatsApp"
     >
-      <FaComment size={32} />
+      <FaWhatsapp size={32} />
     </motion.a>
   );
 };
