@@ -16,7 +16,9 @@ export type ProductCategory =
   | 'pvc-upvc'
   | 'ppr'
   | 'valves'
-  | 'irrigation';
+  | 'irrigation'
+  | 'cpvc-fittings'
+  | 'parts-accessories';
 
 export interface Solution {
   id: string;

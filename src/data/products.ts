@@ -404,6 +404,261 @@ export const products: Product[] = [
     image: '/images/Borehole covers.jpeg',
     features: ['Safety protection', 'Weather resistant', 'Easy installation', 'Durable']
   },
+
+  // CPVC & Fabricated Fittings
+  {
+    id: 'cpvc-001',
+    name: 'Fabricated Flanged Reducers',
+    category: 'cpvc-fittings',
+    description: 'Industrial-grade fabricated flanged reducers for connecting different diameter pipes with secure flange connections.',
+    shortDescription: 'Fabricated flanged reducers',
+    image: '/images/Fabricated flanged  reducers.jpeg',
+    features: ['Multiple sizes', 'Flanged design', 'Industrial grade', 'Long lifespan']
+  },
+  {
+    id: 'cpvc-002',
+    name: 'Flanged 45° Elbow',
+    category: 'cpvc-fittings',
+    description: 'High-quality fabricated 45-degree elbows with flanged connections for directional changes in piping systems.',
+    shortDescription: 'Flanged 45° elbow fitting',
+    image: '/images/Flanged 45° elbow.jpeg',
+    features: ['45-degree angle', 'Flanged connection', 'Durable construction', 'Flow efficient']
+  },
+  {
+    id: 'cpvc-003',
+    name: 'Flanged Fabricated Straight Tee',
+    category: 'cpvc-fittings',
+    description: 'Precision-engineered fabricated straight tee fitting with flanged connections for equal diameter branches.',
+    shortDescription: 'Flanged straight tee',
+    image: '/images/Flanged Fabricated Straight tee.jpeg',
+    features: ['Straight configuration', 'Flanged design', 'High capacity', 'Three-way connection']
+  },
+  {
+    id: 'cpvc-004',
+    name: 'Flanged Reducing Tee',
+    category: 'cpvc-fittings',
+    description: 'Fabricated reducing tee with flanged connections for connecting pipes of different diameters with three-way junction.',
+    shortDescription: 'Flanged reducing tee',
+    image: '/images/Flanged reducing Tee.jpeg',
+    features: ['Reducing design', 'Flanged connection', 'Multiple sizes', 'Versatile application']
+  },
+
+  // New Valves
+  {
+    id: 'valve-017',
+    name: 'Brass and Stainless Steel Solenoid Valve',
+    category: 'valves',
+    description: 'Precision solenoid valve in brass and stainless steel construction for automatic flow control in water systems.',
+    shortDescription: 'Solenoid valve brass/stainless',
+    image: '/images/Brass and stainless steel solenoid valve.jpeg',
+    features: ['Brass & stainless body', 'Electromagnetic control', 'Fast response', 'Long service life']
+  },
+  {
+    id: 'valve-018',
+    name: 'High Flow Float Valve',
+    category: 'valves',
+    description: 'Heavy-duty high-flow float valve for large capacity water level control in tanks and reservoirs.',
+    shortDescription: 'High flow float valve',
+    image: '/images/High flow float valve.jpeg',
+    features: ['High flow capacity', 'Float operated', 'Reliable control', 'Easy installation']
+  },
+
+  // New Water Treatment Products
+  {
+    id: 'wt-004',
+    name: 'Water Filter Cartridges Collection',
+    category: 'water-treatment',
+    description: 'Complete range of replacement water filter cartridges including carbon, sediment, and membrane filters for all water treatment systems.',
+    shortDescription: 'Filter cartridges replacement set',
+    image: '/images/Filters - water treatment.jpeg',
+    features: ['Multiple cartridge types', 'Universal compatibility', 'High filtration', 'Easy replacement']
+  },
+  {
+    id: 'wt-005',
+    name: 'Pressure Gauge',
+    category: 'water-treatment',
+    description: 'Precision dual-scale pressure gauge for monitoring system pressure in water treatment and distribution applications.',
+    shortDescription: 'System pressure gauge',
+    image: '/images/Pressure gauge.jpeg',
+    features: ['Dual scale (bar/psi)', 'Accurate reading', 'Brass connection', 'Easy installation']
+  },
+
+  // Additional Water Treatment Filters & Strainers
+  {
+    id: 'wt-009',
+    name: 'Flanged Y Strainer',
+    category: 'water-treatment',
+    description: 'Industrial flanged Y-strainer for filtering debris and particles in water distribution piping systems.',
+    shortDescription: 'Flanged Y-strainer filter',
+    image: '/images/Flanged Y strainer.jpeg',
+    features: ['Flanged connection', 'High capacity', 'Easy cleaning', 'Corrosion resistant']
+  },
+
+  // Additional Pumps
+  {
+    id: 'pump-004',
+    name: 'Domestic Electric Water Pump 0.5HP',
+    category: 'pumps',
+    description: 'Compact and efficient 0.5HP electric water pump ideal for domestic water supply and small-scale applications.',
+    shortDescription: '0.5HP electric pump',
+    image: '/images/0.5hp domestic pump.jpeg',
+    features: ['0.5HP motor', 'Compact design', 'Energy efficient', 'Easy installation']
+  },
+
+  // Additional Irrigation Products
+  {
+    id: 'irr-004',
+    name: 'Screen Filter for Irrigation',
+    category: 'irrigation',
+    description: 'High-quality screen filter system for irrigation applications with replaceable mesh cartridge for debris removal.',
+    shortDescription: 'Screen irrigation filter',
+    image: '/images/Screen filter - irrigation.jpeg',
+    features: ['Mesh screen filter', 'Replaceable cartridge', 'High flow rate', 'Easy maintenance']
+  },
+
+  // Additional CPVC & Fittings
+  {
+    id: 'cpvc-005',
+    name: 'Metallic Saddle Clamps',
+    category: 'cpvc-fittings',
+    description: 'Heavy-duty metallic saddle clamps for secure pipe fastening and branch connections in various pipe diameters.',
+    shortDescription: 'Metallic saddle clamps',
+    image: '/images/Metallic Sandle clamp.jpeg',
+    features: ['Multiple sizes', 'Corrosion resistant', 'Strong fastening', 'Easy installation']
+  },
+  {
+    id: 'cpvc-006',
+    name: 'Flanges Weldon',
+    category: 'cpvc-fittings',
+    description: 'Precision Weldon flange connections for CPVC and fabricated piping systems with reliable welding compatibility.',
+    shortDescription: 'Weldon flange connector',
+    image: '/images/Flanges weldon.jpeg',
+    features: ['Weldon connection', 'Precision machined', 'Durable design', 'Industrial grade']
+  },
+
+  // Additional Water Treatment
+  {
+    id: 'wt-006',
+    name: 'MPV Swimming Pool Tank',
+    category: 'water-treatment',
+    description: 'Complete swimming pool water treatment tank system with multiport valve for filtration and circulation.',
+    shortDescription: 'Pool treatment tank MPV',
+    image: '/images/Mpv swimming pool tank.jpeg',
+    features: ['Multiport valve', 'High capacity', 'Complete system', 'Professional grade']
+  },
+
+  // Fasteners & Parts
+  {
+    id: 'part-001',
+    name: 'Bolts and Nuts Fasteners Collection',
+    category: 'parts-accessories',
+    description: 'High-quality stainless steel bolts, nuts, and fasteners for valve assembly, piping systems, and equipment maintenance.',
+    shortDescription: 'Stainless steel bolts & nuts set',
+    image: '/images/Bolts and nuts VALVES.jpeg',
+    features: ['Stainless steel', 'Multiple sizes', 'Corrosion resistant', 'Precision engineered']
+  },
+
+  // Additional HDPE Fittings
+  {
+    id: 'hdpe-004',
+    name: 'HDPE Male Adaptor Set',
+    category: 'hdpe-pipes',
+    description: 'Complete set of HDPE male adaptors in multiple sizes for connecting HDPE pipes to threaded connections.',
+    shortDescription: 'HDPE male adaptor collection',
+    image: '/images/HDPE Male Adaptor.jpeg',
+    features: ['Multiple sizes', 'Easy installation', 'Reliable seal', 'High capacity']
+  },
+  {
+    id: 'hdpe-005',
+    name: 'HDPE Straight Tee Collection',
+    category: 'hdpe-pipes',
+    description: 'Comprehensive set of HDPE straight tee fittings for equal diameter branch connections in irrigation and water distribution.',
+    shortDescription: 'HDPE straight tee set',
+    image: '/images/HDPE straight Tee.jpeg',
+    features: ['Multiple sizes', 'Equal branch connection', 'Durable design', 'Flow efficient']
+  },
+  {
+    id: 'hdpe-006',
+    name: 'VJ Coupling HDPE Collection',
+    category: 'hdpe-pipes',
+    description: 'Complete range of VJ couplings for HDPE pipes with flanged connections for reliable water distribution.',
+    shortDescription: 'VJ coupling HDPE set',
+    image: '/images/Vj coupling HDPE.jpeg',
+    features: ['Flanged design', 'Multiple sizes', 'Reliable seal', 'Industrial grade']
+  },
+
+  // Additional PPR Pipes
+  {
+    id: 'ppr-003',
+    name: 'PPR Pipe PN20 Bulk Supply',
+    category: 'ppr',
+    description: 'High-capacity PPR pipes PN20 rated for hot and cold water applications with excellent pressure tolerance.',
+    shortDescription: 'PPR pipe PN20 bulk',
+    image: '/images/PPR pipe PN20.jpeg',
+    features: ['PN20 pressure rated', 'Hot/cold water', 'Bulk supply', 'Long lifespan']
+  },
+
+  // Additional Water Treatment Systems
+  {
+    id: 'wt-007',
+    name: 'UV Steriliser Water Treatment System',
+    category: 'water-treatment',
+    description: 'Complete UV sterilization system with pump, housing, and UV lamps for purifying water and eliminating microorganisms.',
+    shortDescription: 'UV sterilizer system',
+    image: '/images/UV steriliser - water treatment.jpeg',
+    features: ['UV disinfection', 'Complete system', 'Pump included', 'High efficiency']
+  },
+  {
+    id: 'wt-008',
+    name: 'Undersink Reverse Osmosis Complete System',
+    category: 'water-treatment',
+    description: 'Compact undersink reverse osmosis system with UV sterilization, storage tank, and complete faucet assembly for residential use.',
+    shortDescription: 'Undersink RO system complete',
+    image: '/images/Reverse osmosis undersink  - water treatment.jpeg',
+    features: ['UV sterilization', 'Storage tank', 'Easy installation', 'Compact design']
+  },
+
+  // Additional Valves
+  {
+    id: 'valve-021',
+    name: 'Air Release Valve Double Orifice',
+    category: 'valves',
+    description: 'Dual orifice air release valve with enhanced performance for large capacity water distribution systems and industrial applications.',
+    shortDescription: 'Double orifice air valve',
+    image: '/images/Air release valve double orifice.jpeg',
+    features: ['Double orifice design', 'High capacity', 'Reliable performance', 'Industrial rated']
+  },
+  {
+    id: 'valve-022',
+    name: 'HDPE Ball Valve Collection',
+    category: 'valves',
+    description: 'Professional HDPE ball valves with clear center viewing window and manual handles for reliable flow control in water systems.',
+    shortDescription: 'HDPE ball valve set',
+    image: '/images/Ball valve hdpe.jpeg',
+    features: ['HDPE body', 'Clear viewing window', 'Manual handle', 'Reliable operation']
+  },
+
+  // Additional Irrigation Equipment
+  {
+    id: 'irr-005',
+    name: 'Multi-Color Irrigation Sprinkler Set',
+    category: 'irrigation',
+    description: 'Adjustable irrigation sprinkler collection in multiple colors with interchangeable nozzles for precise field and garden irrigation.',
+    shortDescription: 'Sprinkler multi-color set',
+    image: '/images/Irrigation sprinkler.jpeg',
+    features: ['Multiple colors', 'Adjustable range', 'Easy setup', 'Durable design']
+  },
+
+  // Additional Water Treatment Filter
+  {
+    id: 'wt-010',
+    name: 'Brass Y Strainer Filter',
+    category: 'water-treatment',
+    description: 'Premium brass Y-strainer for filtering debris and sediment in water supply lines with easy drain and cartridge access.',
+    shortDescription: 'Brass Y-strainer filter',
+    image: '/images/Y strainer.jpeg',
+    features: ['Brass construction', 'Easy drain access', 'High filtration', 'Durable filter']
+  },
 ];
 
 export const productCategories = [
@@ -415,6 +670,8 @@ export const productCategories = [
   { id: 'ppr', label: 'PPR' },
   { id: 'valves', label: 'Valves' },
   { id: 'irrigation', label: 'Irrigation' },
+  { id: 'cpvc-fittings', label: 'CPVC & Fabricated Fittings' },
+  { id: 'parts-accessories', label: 'Parts & Accessories' },
 ];
 
 
