@@ -21,14 +21,14 @@ export const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="sticky top-0 z-40 border-b border-primary-100/80 bg-white shadow-sm">
+    <nav className="sticky top-0 z-40 navbar-3d-gradient shadow-lg">
       <div className="container mx-auto flex items-center justify-between px-4 py-3 sm:py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group hover:opacity-80 transition">
-          <img src="/favicon.jpg" alt="Wan Afrika Logo" className="w-11 h-11 rounded-lg object-cover shadow-md ring-2 ring-primary-100 group-hover:ring-primary-blue transition-all" />
+          <img src="/favicon.jpg" alt="Wan Afrika Logo" className="w-11 h-11 rounded-lg object-cover shadow-md ring-2 ring-white/30 group-hover:ring-white transition-all" />
           <div className="hidden sm:block">
-            <h1 className="font-bold text-lg text-dark-primary group-hover:text-primary-blue transition">Wan Afrika</h1>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary-600">Water Solutions</p>
+            <h1 className="font-bold text-sm md:text-base text-white group-hover:text-white/90 transition leading-tight">WAN AFRIKA TRADERS</h1>
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-blue-100">Water Solutions</p>
           </div>
         </Link>
 
@@ -38,10 +38,14 @@ export const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`rounded-full px-3 py-2 text-sm font-semibold transition-all ${
+              className={`relative px-3 py-2 text-sm font-semibold transition-all duration-300 ${
                 isActive(link.path)
-                  ? 'bg-primary-50 text-primary-blue shadow-sm'
-                  : 'text-slate-600 hover:bg-primary-50 hover:text-primary-blue'
+                  ? 'text-white'
+                  : 'text-white/70 hover:text-white'
+              } after:absolute after:bottom-0 after:left-0 after:h-[3px] after:bg-gradient-to-r after:from-primary-cyan after:to-blue-300 after:transition-all after:duration-300 ${
+                isActive(link.path)
+                  ? 'after:w-full'
+                  : 'after:w-0 hover:after:w-full'
               }`}
             >
               {link.name}
@@ -52,12 +56,12 @@ export const Navbar = () => {
         {/* Catalogue Button */}
         <Link
           to="/catalogue"
-          className="relative hidden items-center gap-2 rounded-md bg-dark-primary px-4 py-2 text-white shadow-glow transition-all hover:-translate-y-0.5 hover:bg-primary-blue lg:flex"
+          className="relative hidden items-center gap-2 rounded-md bg-white text-dark-primary px-4 py-2 shadow-lg transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-xl lg:flex font-semibold"
         >
           <FaCartShopping size={20} />
           <span className="font-medium">Catalogue</span>
           {getTotalItems() > 0 && (
-            <span className="absolute -top-2 -right-2 bg-accent-amber text-dark-primary text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center ring-2 ring-white">
+            <span className="absolute -top-2 -right-2 bg-accent-green text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center ring-2 ring-white">
               {getTotalItems()}
             </span>
           )}
@@ -65,7 +69,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="rounded-md border border-primary-100 p-2 text-dark-primary lg:hidden"
+          className="rounded-md border border-white/30 p-2 text-white lg:hidden hover:bg-white/10 transition"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FaX size={24} /> : <FaBars size={24} />}
@@ -78,18 +82,22 @@ export const Navbar = () => {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
-          className="border-t border-primary-100 bg-white/95 lg:hidden"
+          className="border-t border-white/10 bg-gradient-to-b from-dark-primary/95 to-[#0a4fa8]/95 lg:hidden"
         >
-          <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
+          <div className="container mx-auto px-4 py-4 flex flex-col gap-2">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`rounded-md px-3 py-2 font-semibold transition-colors ${
+                className={`relative px-3 py-2.5 font-semibold transition-all duration-300 rounded-md ${
                   isActive(link.path)
-                    ? 'bg-primary-50 text-primary-blue'
-                    : 'text-slate-600 hover:bg-primary-50 hover:text-primary-blue'
+                    ? 'text-white bg-white/10'
+                    : 'text-white/70 hover:text-white hover:bg-white/5'
+                } after:absolute after:bottom-1 after:left-3 after:h-[2px] after:bg-gradient-to-r after:from-primary-cyan after:to-blue-300 after:transition-all after:duration-300 ${
+                  isActive(link.path)
+                    ? 'after:w-6'
+                    : 'after:w-0 hover:after:w-6'
                 }`}
               >
                 {link.name}
@@ -98,7 +106,7 @@ export const Navbar = () => {
             <Link
               to="/catalogue"
               onClick={() => setIsOpen(false)}
-              className="flex items-center gap-2 rounded-md bg-dark-primary px-4 py-3 text-white"
+              className="flex items-center gap-2 rounded-md bg-white text-dark-primary px-4 py-3 font-semibold"
             >
               <FaCartShopping size={20} />
               Catalogue ({getTotalItems()})
