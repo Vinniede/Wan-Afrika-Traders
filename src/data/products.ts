@@ -519,10 +519,10 @@ export const products: Product[] = [
   // Additional CPVC & Fittings
   {
     id: 'cpvc-005',
-    name: 'Metallic Saddle Clamps',
+    name: 'Metallic Sandle Clamps',
     category: 'cpvc-fittings',
-    description: 'Heavy-duty metallic saddle clamps for secure pipe fastening and branch connections in various pipe diameters.',
-    shortDescription: 'Metallic saddle clamps',
+    description: 'Heavy-duty metallic sandle clamps for secure pipe fastening and branch connections in various pipe diameters.',
+    shortDescription: 'Metallic sandle clamps',
     image: '/images/Metallic Sandle clamp.jpeg',
     features: ['Multiple sizes', 'Corrosion resistant', 'Strong fastening', 'Easy installation']
   },
@@ -630,23 +630,23 @@ export const products: Product[] = [
   },
   {
     id: 'valve-022',
-    name: 'HDPE Ball Valve Collection',
+    name: 'HDPE Ball Valve Main',
     category: 'valves',
-    description: 'Professional HDPE ball valves with clear center viewing window and manual handles for reliable flow control in water systems.',
-    shortDescription: 'HDPE ball valve set',
-    image: '/images/Ball valve hdpe.jpeg',
+    description: 'Professional HDPE ball valve with clear center viewing window and manual handle for reliable flow control in water systems.',
+    shortDescription: 'HDPE ball valve main',
+    image: '/images/HDPE ball valve main.jpeg',
     features: ['HDPE body', 'Clear viewing window', 'Manual handle', 'Reliable operation']
   },
 
   // Additional Irrigation Equipment
   {
     id: 'irr-005',
-    name: 'Multi-Color Irrigation Sprinkler Set',
+    name: 'Main Irrigation Sprinkler System',
     category: 'irrigation',
-    description: 'Adjustable irrigation sprinkler collection in multiple colors with interchangeable nozzles for precise field and garden irrigation.',
-    shortDescription: 'Sprinkler multi-color set',
-    image: '/images/Irrigation sprinkler.jpeg',
-    features: ['Multiple colors', 'Adjustable range', 'Easy setup', 'Durable design']
+    description: 'Professional-grade main irrigation sprinkler with adjustable coverage and easy setup for field and garden applications.',
+    shortDescription: 'Main sprinkler system',
+    image: '/images/Sprinkler main.jpeg',
+    features: ['Adjustable coverage', 'Professional grade', 'Easy setup', 'Durable design']
   },
 
   // Additional Water Treatment Filter
