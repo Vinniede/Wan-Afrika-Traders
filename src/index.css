@@ -2,38 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes gradient3D {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
 body {
   font-family: system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #082D3F;
-  background:
-    radial-gradient(circle at 15% 0%, rgba(23, 183, 213, 0.12), transparent 28rem),
-    linear-gradient(180deg, #f7fcfd 0%, #ffffff 34%, #f3fafb 100%);
-  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -45,14 +27,21 @@ body {
   flex-direction: column;
 }
 
-::selection {
-  background: rgba(23, 183, 213, 0.28);
-  color: #082D3F;
+/* Navbar 3D Gradient */
+.navbar-3d-gradient {
+  background: linear-gradient(135deg, #0a3966 0%, #0d5a99 50%, #0a7eaa 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-.navbar-3d-gradient {
-  background: linear-gradient(-45deg, #082D3F, #0a4fa8, #1554d1, #17B7D5, #0a4fa8, #082D3F);
-  background-size: 400% 400%;
-  animation: gradient3D 8s ease infinite;
-  position: relative;
+.navbar-3d-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(147, 197, 253, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(34, 197, 194, 0.05) 0%, transparent 50%);
+  pointer-events: none;
 }

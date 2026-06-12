@@ -10,7 +10,6 @@ import {
   FaFileLines,
   FaGear,
   FaHeadset,
-  FaShield,
   FaShieldHalved,
   FaTruckFast,
   FaSeedling,
@@ -20,11 +19,10 @@ import {
 } from 'react-icons/fa6';
 import { SectionHeader } from '../../components/common/SectionHeader';
 import { ProductCard } from '../../components/products/ProductCard';
+import { ProductCarousel } from '../../components/common/ProductCarousel';
 import { CTASection } from '../../components/common/CTASection';
-import { Testimonials } from '../../components/common/Testimonials';
 import { useCatalogue } from '../../hooks/useCatalogue';
 import { productService } from '../../services/productService';
-import { testimonials } from '../../data/testimonials';
 import type { Product } from '../../types';
 
 export const Home = () => {
@@ -75,12 +73,14 @@ export const Home = () => {
 
   const categories = [
     { name: 'Water Treatment Equipment', image: '/categories/water treatment equipment.jpeg' },
+    { name: 'Pumps', image: '/categories/Pumps category.jpg' },
+    { name: 'PPR Pipes and Fittings', image: '/categories/PPR Pipes and Fittings.png' },
+    { name: 'PVC or High-Pressure pipes and fittings', image: '/categories/PVC or High-Pressure pipes and fittings.png' },
+    { name: 'UPVC Pipes and Fittings', image: '/categories/UPVC Pipes and Fittings.png' },
+    { name: 'CPVC and Fabricated Fittings', image: '/categories/CPVC and Fabricated Fittings.jpeg' },
+    { name: 'HDPE Pipes and Fittings', image: '/categories/HDPE Pipes and Fittings.png' },
     { name: 'Irrigation Equipment', image: '/categories/Irrigation Equipment.jpeg' },
-    { name: 'Pumps', image: '/categories/Pumps.jpeg' },
-    { name: 'HDPE Pipes', image: '/categories/HDPE Pipes E.jpg' },
-    { name: 'PVC & UPVC Fittings', image: '/categories/PVC & UPVC Fittings.jpeg' },
-    { name: 'PPR Pipes & Fittings', image: '/categories/PPR Pipes & Fittings.jpeg' },
-    { name: 'Industrial Valves', image: '/categories/Industrial Valves.jpg' },
+    { name: 'Valves Category', image: '/categories/Valves Category.jpeg' },
     { name: 'Water Storage Solutions', image: '/categories/Water Storage Solutions.jpeg' },
   ];
 
@@ -102,53 +102,51 @@ export const Home = () => {
         <meta property="og:type" content="website" />
       </Helmet>
 
-      <section className="relative overflow-hidden bg-[#eaf9ff] md:min-h-[100px] lg:min-h-[110px]">
+      <section className="relative overflow-hidden bg-[#eaf9ff] sm:min-h-[390px] lg:min-h-[420px] xl:min-h-[440px]">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-[62%_center] sm:bg-[58%_center] lg:bg-center"
           style={{ backgroundImage: "url('/Hero baner.png')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/75 via-white/60 via-[50%] to-white/20 sm:from-white/65 sm:via-white/50 sm:via-[55%] sm:to-white/15 md:bg-gradient-to-r md:from-white/50 md:via-white/40 md:via-[45%] md:to-white/0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-transparent to-[#0a62cf]/15" />
-        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-[#bdeeff]/75 to-transparent md:bottom-[35px] md:h-12" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/92 via-white/70 via-[42%] to-transparent sm:from-white/88 sm:via-white/58 md:from-white/84 md:via-white/46 md:via-[40%] md:to-transparent" />
 
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="relative z-10 mx-auto flex max-w-7xl flex-col px-4 pt-3 sm:px-6 sm:pt-4 md:min-h-[80px] md:px-8 lg:px-10 lg:pt-3"
+          className="relative z-10 mx-auto flex min-h-[250px] max-w-7xl flex-col justify-center px-4 pb-4 pt-3 sm:min-h-[280px] sm:px-6 sm:pb-28 md:px-8 lg:min-h-[315px] lg:px-10 lg:pb-32 xl:min-h-[330px]"
         >
-          <div className="mb-2 flex max-w-full items-center gap-2 sm:mb-3 sm:gap-2.5">
-            <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-b-[16px] rounded-t-[22px] bg-gradient-to-b from-[#123fb4] to-[#13aee6] text-white shadow-glow sm:h-11 sm:w-10">
-              <FaEarthAfrica className="text-lg sm:text-xl" />
+          <div className="mb-2 flex max-w-full items-center gap-2 sm:mb-2.5 sm:gap-2.5">
+            <div className="flex h-9 w-8 flex-shrink-0 items-center justify-center rounded-b-[17px] rounded-t-[21px] bg-gradient-to-b from-[#123fb4] to-[#08aeea] text-white shadow-glow sm:h-10 sm:w-9 lg:h-12 lg:w-10">
+              <FaEarthAfrica className="text-lg sm:text-xl lg:text-2xl" />
             </div>
-            <div className="min-w-0 leading-none">
-              <p className="text-xs font-black uppercase tracking-wide text-[#143ba8] sm:text-sm md:text-base">Wan Afrika</p>
-              <p className="text-xs font-light uppercase tracking-[0.14em] text-[#0fa9e4] sm:text-sm sm:tracking-[0.18em] md:text-base">Traders</p>
-              <p className="mt-1 text-xs font-semibold text-[#09275c] sm:text-xs md:text-xs">Complete Water Solutions for Africa</p>
+            <div className="min-w-0 uppercase leading-none">
+              <p className="text-lg font-black tracking-wide text-[#113fae] sm:text-xl lg:text-2xl">Wan Afrika</p>
+              <p className="text-base font-light tracking-[0.14em] text-[#0fa9e4] sm:text-lg lg:text-xl">Traders</p>
+              <p className="mt-0.5 text-[10px] font-semibold normal-case tracking-normal text-[#09275c] sm:text-[11px]">Complete Water Solutions for Africa</p>
             </div>
           </div>
 
-          <div className="max-w-2xl">
-            <h1 className="text-lg font-black uppercase leading-[1.15] tracking-wider text-[#061f4b] min-[420px]:text-2xl sm:text-3xl lg:text-4xl">
+          <div className="max-w-[36rem]">
+            <h1 className="text-xl font-black uppercase leading-none tracking-wide text-[#061f4b] sm:text-2xl md:text-3xl lg:text-4xl">
               Complete
-              <span className="mt-1 block text-[#1454d6]">Water Solutions</span>
-              <span className="mt-1 block text-[#061f4b]">For Africa</span>
+              <span className="block text-[#1454d6]">Water Solutions</span>
+              <span className="block text-[#061f4b]">For Africa</span>
             </h1>
-            <p className="mt-2 max-w-xl text-xs leading-relaxed text-slate-700 sm:text-xs md:text-sm">
+            <p className="mt-1.5 max-w-xl text-xs leading-snug text-slate-800 sm:text-sm">
               Your trusted partner for water treatment, irrigation, pumps, pipes, valves and sustainable water solutions.
             </p>
 
-            <div className="mt-3 flex flex-col gap-2.5 sm:mt-3 sm:flex-row sm:gap-3">
+            <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:gap-3">
               <Link
                 to="/products"
-                className="flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-[#1554d1] to-[#0a3ba5] px-4 py-2.5 text-xs font-black uppercase text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:from-[#0b3ea8] hover:to-[#082d7a] sm:px-5 sm:py-2.5 sm:text-xs"
+                className="flex min-h-10 items-center justify-center gap-2 rounded-md bg-gradient-to-r from-[#1554d1] to-[#0a3ba5] px-4 py-2 text-xs font-black uppercase text-white shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl hover:from-[#0b3ea8] hover:to-[#082d7a] sm:px-5"
               >
                 <FaDroplet size={16} />
                 Explore Products
               </Link>
               <Link
                 to="/contact"
-                className="flex items-center justify-center gap-2 rounded-lg border-2 border-[#1554d1] bg-white/80 px-4 py-2.5 text-xs font-black uppercase text-[#1554d1] shadow-md transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-lg sm:px-5 sm:py-2.5 sm:text-xs"
+                className="flex min-h-10 items-center justify-center gap-2 rounded-md border-2 border-[#1554d1] bg-white/75 px-4 py-2 text-xs font-black uppercase text-[#1554d1] shadow-md transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-lg sm:px-5"
               >
                 <FaFileLines size={16} />
                 Request Quote
@@ -156,18 +154,18 @@ export const Home = () => {
             </div>
           </div>
 
-          <div className="mt-3 grid max-w-2xl grid-cols-2 gap-2 sm:mt-3 sm:grid-cols-4 sm:gap-0">
+          <div className="mt-3 grid max-w-2xl grid-cols-2 gap-y-1.5 sm:grid-cols-4 sm:gap-y-0">
             {features.map((feature, idx) => {
               const Icon = feature.icon;
               return (
                 <div
                   key={feature.title}
-                  className={`flex min-h-14 flex-col items-center justify-center rounded-lg bg-white/65 px-2.5 py-3 text-center text-[#09275c] shadow-sm backdrop-blur-sm transition-all hover:bg-white/80 sm:min-h-16 sm:rounded-none sm:bg-transparent sm:py-3 sm:px-3 sm:shadow-none sm:backdrop-blur-0 sm:hover:bg-transparent ${
-                    idx > 0 ? 'sm:border-l sm:border-[#1454d6]/30' : ''
+                  className={`flex min-h-9 flex-col items-center justify-center px-2 text-center text-[#09275c] sm:min-h-10 ${
+                    idx > 0 ? 'sm:border-l sm:border-[#1454d6]/35' : ''
                   }`}
                 >
-                  <Icon className="mb-1.5 text-xl text-[#1554d1] sm:mb-1 sm:text-2xl" />
-                  <p className="text-xs font-black uppercase leading-tight sm:text-xs">
+                  <Icon className="mb-0.5 text-lg text-[#1554d1] sm:text-xl" />
+                  <p className="text-xs font-black uppercase leading-tight">
                     {feature.title}
                   </p>
                 </div>
@@ -176,35 +174,40 @@ export const Home = () => {
           </div>
         </motion.div>
 
-        <div className="relative z-0 w-full overflow-hidden pt-24 pb-6 sm:pt-28 sm:pb-6 md:pt-28 md:pb-6">
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <svg viewBox="0 0 1200 500" preserveAspectRatio="none" className="w-full h-full pointer-events-none">
-              <path d="M0,200 Q300,80 600,200 T1200,200 L1200,500 L0,500 Z" fill="#0a4fa8" />
-              <path d="M0,240 Q300,120 600,240 T1200,240 L1200,500 L0,500 Z" fill="#0d6fd6" opacity="0.8" />
-              <path d="M0,280 Q300,160 600,280 T1200,280 L1200,500 L0,500 Z" fill="#0099dd" opacity="0.6" />
+        <div className="relative z-20 overflow-hidden pb-5 pt-12 sm:absolute sm:bottom-0 sm:left-0 sm:right-0 sm:pb-5 sm:pt-12 lg:pb-6 lg:pt-14">
+          <div className="absolute inset-0 overflow-hidden">
+            <svg viewBox="0 0 1200 220" preserveAspectRatio="none" className="h-full w-full">
+              <path d="M0,62 C230,138 438,70 646,92 C840,112 1012,66 1200,22 L1200,220 L0,220 Z" fill="#063aa8" />
+              <path d="M0,92 C270,145 474,94 682,112 C876,129 1026,90 1200,54 L1200,220 L0,220 Z" fill="#0857d9" opacity="0.85" />
+              <path d="M0,118 C282,158 506,122 712,135 C905,147 1055,116 1200,86 L1200,220 L0,220 Z" fill="#019fe3" opacity="0.55" />
             </svg>
           </div>
-          <div className="relative mx-auto grid max-w-7xl gap-6 px-3 sm:px-6 md:grid-cols-3 md:gap-6 md:px-8 lg:px-10">
+          <div className="relative mx-auto grid max-w-7xl gap-2.5 px-4 text-white sm:grid-cols-3 sm:gap-4 sm:px-6 md:px-8 lg:px-10">
             {[
               { icon: FaDroplet, title: 'Sustainable Solutions', copy: 'For a better tomorrow' },
               { icon: FaEarthAfrica, title: 'Serving Africa', copy: 'With pride and commitment' },
               { icon: FaShieldHalved, title: 'Reliable. Durable. Trusted.', copy: 'Quality you can depend on' },
-            ].map((item, idx) => {
+            ].map((item) => {
               const Icon = item.icon;
               return (
                 <div
                   key={item.title}
-                  className="flex flex-col items-center text-center"
+                  className="flex items-center gap-3 rounded-md bg-white/10 px-3 py-2 text-left shadow-sm sm:justify-center sm:rounded-none sm:bg-transparent sm:px-0 sm:py-0 sm:shadow-none sm:border-l sm:border-white/45 sm:first:border-l-0 sm:first:pl-0 sm:pl-6"
                 >
-                  <Icon className="mb-2 text-2xl text-white sm:text-3xl" />
-                  <h3 className="text-xs font-black uppercase text-white sm:text-xs">{item.title}</h3>
-                  <p className="mt-1 text-xs text-white/90 md:text-xs">{item.copy}</p>
+                  <Icon className="h-7 w-7 flex-none text-white sm:h-8 sm:w-8 lg:h-9 lg:w-9" />
+                  <div className="min-w-0">
+                    <h3 className="text-xs font-black uppercase">{item.title}</h3>
+                    <p className="mt-0.5 text-xs leading-snug text-white/90 sm:text-sm">{item.copy}</p>
+                  </div>
                 </div>
               );
             })}
           </div>
         </div>
       </section>
+
+      {/* Product Carousel Section */}
+      <ProductCarousel />
 
       <section className="py-12 md:py-20 lg:py-24">
         <div className="container mx-auto px-4">
@@ -309,8 +312,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-
-      <Testimonials testimonials={testimonials} />
 
       <CTASection
         title="Ready to Transform Your Water Solutions?"

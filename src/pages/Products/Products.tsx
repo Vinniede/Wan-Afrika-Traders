@@ -1,19 +1,19 @@
-import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
-import { HeroSection } from '../../components/common/HeroSection';
-import { SectionHeader } from '../../components/common/SectionHeader';
-import { ProductCard } from '../../components/products/ProductCard';
-import { CTASection } from '../../components/common/CTASection';
-import { productService } from '../../services/productService';
-import { productCategories } from '../../data/products';
-import { useCatalogue } from '../../hooks/useCatalogue';
-import type { Product } from '../../types';
-import { motion } from 'framer-motion';
+import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+import { HeroSection } from "../../components/common/HeroSection";
+import { SectionHeader } from "../../components/common/SectionHeader";
+import { ProductCard } from "../../components/products/ProductCard";
+import { CTASection } from "../../components/common/CTASection";
+import { productService } from "../../services/productService";
+import { productCategories } from "../../data/products";
+import { useCatalogue } from "../../hooks/useCatalogue";
+import type { Product } from "../../types";
+import { motion } from "framer-motion";
 
 export const Products = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [filtered, setFiltered] = useState<Product[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [loading, setLoading] = useState(true);
   const { addItem } = useCatalogue();
 
@@ -28,10 +28,10 @@ export const Products = () => {
   }, []);
 
   useEffect(() => {
-    if (selectedCategory === 'all') {
+    if (selectedCategory === "all") {
       setFiltered(products);
     } else {
-      const filtered = products.filter(p => p.category === selectedCategory);
+      const filtered = products.filter((p) => p.category === selectedCategory);
       setFiltered(filtered);
     }
   }, [selectedCategory, products]);
@@ -49,7 +49,10 @@ export const Products = () => {
     <>
       <Helmet>
         <title>Products - Wan Afrika Traders</title>
-        <meta name="description" content="Explore our comprehensive range of water treatment equipment, irrigation systems, pumps, pipes, valves, and more." />
+        <meta
+          name="description"
+          content="Explore our comprehensive range of water treatment equipment, irrigation systems, pumps, pipes, valves, and more."
+        />
         <meta property="og:title" content="Products - Wan Afrika Traders" />
       </Helmet>
 
@@ -61,7 +64,7 @@ export const Products = () => {
       />
 
       {/* Products Section */}
-      <section className="py-12 md:py-20 lg:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Browse Products"
@@ -69,16 +72,16 @@ export const Products = () => {
           />
 
           {/* Category Filters */}
-          <div className="mb-10 flex flex-wrap justify-center gap-2 sm:gap-3 md:mb-12">
+          <div className="flex flex-wrap gap-3 mb-12 justify-center">
             {productCategories.map((category) => (
               <motion.button
                 key={category.id}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`rounded-full px-4 py-2 text-sm font-semibold transition-all sm:px-6 sm:text-base ${
+                className={`px-6 py-2 rounded-full font-semibold transition-all ${
                   selectedCategory === category.id
-                    ? 'bg-dark-primary text-white shadow-glow'
-                    : 'bg-light-secondary text-dark-primary hover:bg-gray-200'
+                    ? "bg-gradient-to-r from-primary-blue to-primary-cyan text-white shadow-lg"
+                    : "bg-light-secondary text-dark-primary hover:bg-gray-200"
                 }`}
               >
                 {category.label}
@@ -90,7 +93,7 @@ export const Products = () => {
           {loading ? (
             <div className="text-center py-12">Loading products...</div>
           ) : filtered.length > 0 ? (
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {filtered.map((product, idx) => (
                 <motion.div
                   key={product.id}
@@ -108,7 +111,9 @@ export const Products = () => {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-slate-600 text-lg">No products found in this category.</p>
+              <p className="text-gray-600 text-lg">
+                No products found in this category.
+              </p>
             </div>
           )}
         </div>
@@ -126,4 +131,3 @@ export const Products = () => {
     </>
   );
 };
-

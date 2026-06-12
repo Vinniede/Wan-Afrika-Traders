@@ -5,7 +5,7 @@ export const solutions: Solution[] = [
     id: 'sol-001',
     title: 'Irrigation Solutions',
     description: 'Complete irrigation systems designed for maximum water efficiency and crop yield. From drip irrigation to large-scale sprinkler systems.',
-    image: '/solutions/Irrigation Solutions.jpeg',
+    image: '/images/Rain gun.jpeg',
     benefits: [
       'Water efficiency up to 90%',
       'Reduced water bills',
@@ -19,7 +19,7 @@ export const solutions: Solution[] = [
     id: 'sol-002',
     title: 'Water Treatment Solutions',
     description: 'Advanced water purification systems for residential, commercial, and industrial applications. Removes contaminants and ensures safe water supply.',
-    image: '/solutions/Water Treatment Solutions.jpeg',
+    image: '/images/FRP Tank for water treatment.jpeg',
     benefits: [
       'Removes 99.9% of contaminants',
       'Safe drinking water',
@@ -33,7 +33,7 @@ export const solutions: Solution[] = [
     id: 'sol-003',
     title: 'Borehole Solutions',
     description: 'Complete borehole installation and maintenance solutions. Including submersible pumps, filtration, and distribution systems.',
-    image: '/solutions/Borehole Solutions.jpeg',
+    image: '/images/HDPE pipes.jpeg',
     benefits: [
       'Reliable water source',
       'Minimal maintenance',
@@ -47,7 +47,7 @@ export const solutions: Solution[] = [
     id: 'sol-004',
     title: 'Water Distribution Systems',
     description: 'Efficient water distribution networks for residential and commercial complexes. Designed for minimal water loss and maximum coverage.',
-    image: '/solutions/Water Distribution Systems.png',
+    image: '/images/Gate valves.jpeg',
     benefits: [
       'Reduced water loss',
       'Wide coverage area',
@@ -61,7 +61,7 @@ export const solutions: Solution[] = [
     id: 'sol-005',
     title: 'Industrial Water Systems',
     description: 'Heavy-duty water management systems for manufacturing, processing, and industrial facilities.',
-    image: '/solutions/Industrial Water Systems.jpeg',
+    image: '/images/Pressure gauge.jpeg',
     benefits: [
       'High capacity handling',
       'Continuous operation',
@@ -75,7 +75,7 @@ export const solutions: Solution[] = [
     id: 'sol-006',
     title: 'Environmental Water Solutions',
     description: 'Sustainable water management solutions focused on environmental conservation and resource protection.',
-    image: '/solutions/Environmental Water Solutions.webp',
+    image: '/images/Rain hose pipe for irrigation.jpeg',
     benefits: [
       'Eco-friendly technology',
       'Solar integration',
@@ -86,5 +86,4 @@ export const solutions: Solution[] = [
     relatedProducts: ['pump-003', 'wt-002', 'irr-001', 'hdpe-001', 'ppr-001']
   },
 ];
-
 

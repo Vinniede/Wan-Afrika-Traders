@@ -101,4 +101,3 @@ export const projectCategories = [
   { id: 'commercial', label: 'Commercial Projects' },
 ];
 
-

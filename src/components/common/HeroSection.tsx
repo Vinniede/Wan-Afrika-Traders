@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import type { ReactNode } from 'react';
+import { motion } from "framer-motion";
+import type { ReactNode } from "react";
 
 interface HeroSectionProps {
   title: string;
@@ -16,32 +16,23 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <div
-      className="relative min-h-[200px] w-full overflow-hidden sm:min-h-[220px] md:min-h-[300px]"
+      className="relative w-full min-h-[200px] overflow-hidden md:min-h-[250px]"
       style={{
         backgroundImage: backgroundImage
-          ? `linear-gradient(120deg, rgba(8, 45, 63, 0.88), rgba(7, 94, 137, 0.78), rgba(23, 183, 213, 0.55)), url('${backgroundImage}')`
-          : 'linear-gradient(135deg, #082D3F 0%, #075E89 52%, #17B7D5 100%)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+          ? `url('${backgroundImage}')`
+          : "linear-gradient(135deg, #0057D9 0%, #00AEEF 100%)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-white/25 to-transparent" />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(0deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:72px_72px] opacity-25" />
+      {backgroundImage && <div className="absolute inset-0 bg-black/45" />}
 
-      <div className="relative z-10 container mx-auto flex h-full flex-col items-center justify-center px-4 py-9 text-center sm:py-10 md:py-14">
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.45 }}
-          className="mb-3 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-primary-50 backdrop-blur"
-        >
-          Wan Afrika Water Systems
-        </motion.div>
+      <div className="relative z-10 container mx-auto px-4 h-full flex min-h-[200px] flex-col justify-center items-center text-center py-10 md:min-h-[250px] md:py-12">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="max-w-5xl text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl"
+          className="mb-3 text-3xl font-bold text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.55)] md:text-4xl lg:text-5xl"
         >
           {title}
         </motion.h1>
@@ -51,7 +42,7 @@ export const HeroSection = ({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="mb-5 mt-3 max-w-2xl text-base leading-relaxed text-primary-50 md:text-lg"
+            className="mb-6 max-w-2xl text-base text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)] md:text-lg"
           >
             {subtitle}
           </motion.p>
@@ -70,4 +61,3 @@ export const HeroSection = ({
     </div>
   );
 };
-

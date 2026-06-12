@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
-import { HeroSection } from '../../components/common/HeroSection';
-import { SectionHeader } from '../../components/common/SectionHeader';
-import { SolutionCard } from '../../components/solutions/SolutionCard';
-import { CTASection } from '../../components/common/CTASection';
-import { solutionService } from '../../services/solutionService';
-import type { Solution } from '../../types';
+import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+import { HeroSection } from "../../components/common/HeroSection";
+import { SectionHeader } from "../../components/common/SectionHeader";
+import { SolutionCard } from "../../components/solutions/SolutionCard";
+import { CTASection } from "../../components/common/CTASection";
+import { solutionService } from "../../services/solutionService";
+import type { Solution } from "../../types";
 
 export const Solutions = () => {
   const [solutions, setSolutions] = useState<Solution[]>([]);
@@ -24,7 +24,10 @@ export const Solutions = () => {
     <>
       <Helmet>
         <title>Solutions - Wan Afrika Traders</title>
-        <meta name="description" content="Discover our comprehensive water solutions including irrigation, treatment, borehole, and industrial water systems." />
+        <meta
+          name="description"
+          content="Discover our comprehensive water solutions including irrigation, treatment, borehole, and industrial water systems."
+        />
         <meta property="og:title" content="Solutions - Wan Afrika Traders" />
       </Helmet>
 
@@ -36,7 +39,7 @@ export const Solutions = () => {
       />
 
       {/* Solutions Section */}
-      <section className="py-12 md:py-20 lg:py-24">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
           <SectionHeader
             title="Our Solutions"
@@ -46,9 +49,13 @@ export const Solutions = () => {
           {loading ? (
             <div className="text-center py-12">Loading solutions...</div>
           ) : (
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {solutions.map((solution, idx) => (
-                <SolutionCard key={solution.id} solution={solution} index={idx} />
+                <SolutionCard
+                  key={solution.id}
+                  solution={solution}
+                  index={idx}
+                />
               ))}
             </div>
           )}
@@ -56,19 +63,22 @@ export const Solutions = () => {
       </section>
 
       {/* Detailed Solutions Info */}
-      <section className="bg-light-secondary py-12 md:py-20 lg:py-24">
+      <section className="py-16 md:py-24 bg-light-secondary">
         <div className="container mx-auto px-4">
-          <h2 className="mb-8 text-center text-3xl font-bold text-dark-primary sm:text-4xl md:mb-12 md:text-5xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-dark-primary mb-12 text-center">
             Why Choose Our Solutions?
           </h2>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-12">
-            <div className="rounded-lg bg-white p-5 shadow-water sm:p-8">
-              <h3 className="mb-4 text-xl font-bold text-dark-primary sm:text-2xl">Customized Approach</h3>
-              <p className="text-slate-600 mb-4">
-                Every water challenge is unique. We analyze your specific requirements and design custom solutions 
-                that maximize efficiency and minimize costs.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-dark-primary mb-4">
+                Customized Approach
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Every water challenge is unique. We analyze your specific
+                requirements and design custom solutions that maximize
+                efficiency and minimize costs.
               </p>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary-cyan rounded-full" />
                   Site assessment and analysis
@@ -84,13 +94,16 @@ export const Solutions = () => {
               </ul>
             </div>
 
-            <div className="rounded-lg bg-white p-5 shadow-water sm:p-8">
-              <h3 className="mb-4 text-xl font-bold text-dark-primary sm:text-2xl">Expert Support</h3>
-              <p className="text-slate-600 mb-4">
-                Our team of experienced engineers and technicians provides comprehensive support throughout 
-                the entire lifecycle of your water system.
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-dark-primary mb-4">
+                Expert Support
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Our team of experienced engineers and technicians provides
+                comprehensive support throughout the entire lifecycle of your
+                water system.
               </p>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary-cyan rounded-full" />
                   Technical consultation
@@ -106,13 +119,15 @@ export const Solutions = () => {
               </ul>
             </div>
 
-            <div className="rounded-lg bg-white p-5 shadow-water sm:p-8">
-              <h3 className="mb-4 text-xl font-bold text-dark-primary sm:text-2xl">Quality Assurance</h3>
-              <p className="text-slate-600 mb-4">
-                All our solutions are built with premium materials and undergo rigorous testing to ensure 
-                durability and reliability.
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-dark-primary mb-4">
+                Quality Assurance
+              </h3>
+              <p className="text-gray-600 mb-4">
+                All our solutions are built with premium materials and undergo
+                rigorous testing to ensure durability and reliability.
               </p>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary-cyan rounded-full" />
                   ISO certified products
@@ -128,13 +143,15 @@ export const Solutions = () => {
               </ul>
             </div>
 
-            <div className="rounded-lg bg-white p-5 shadow-water sm:p-8">
-              <h3 className="mb-4 text-xl font-bold text-dark-primary sm:text-2xl">Sustainability</h3>
-              <p className="text-slate-600 mb-4">
-                We focus on eco-friendly solutions that minimize environmental impact while maximizing 
-                resource efficiency.
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-dark-primary mb-4">
+                Sustainability
+              </h3>
+              <p className="text-gray-600 mb-4">
+                We focus on eco-friendly solutions that minimize environmental
+                impact while maximizing resource efficiency.
               </p>
-              <ul className="space-y-2 text-slate-600">
+              <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary-cyan rounded-full" />
                   Energy-efficient systems
@@ -165,5 +182,3 @@ export const Solutions = () => {
     </>
   );
 };
-
-

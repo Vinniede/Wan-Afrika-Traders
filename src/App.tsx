@@ -1,7 +1,6 @@
-import { BrowserRouter as Router, useRoutes } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
-import { routes } from './routes';
-import { ErrorBoundary } from './components/common/ErrorBoundary';
+import { BrowserRouter as Router, useRoutes } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import { routes } from "./routes";
 
 function AppRoutes() {
   const element = useRoutes(routes);
@@ -10,15 +9,12 @@ function AppRoutes() {
 
 function App() {
   return (
-    <ErrorBoundary>
-      <HelmetProvider>
-        <Router>
-          <AppRoutes />
-        </Router>
-      </HelmetProvider>
-    </ErrorBoundary>
+    <HelmetProvider>
+      <Router>
+        <AppRoutes />
+      </Router>
+    </HelmetProvider>
   );
 }
 
 export default App;
-
