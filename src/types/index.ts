@@ -18,7 +18,9 @@ export type ProductCategory =
   | 'valves'
   | 'irrigation'
   | 'cpvc-fittings'
-  | 'parts-accessories';
+  | 'parts-accessories'
+  | 'sanitary-appliances'
+  | 'butt-fusion';
 
 export interface Solution {
   id: string;

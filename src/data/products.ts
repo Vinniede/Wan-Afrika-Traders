@@ -4,28 +4,28 @@ export const products: Product[] = [
   // Water Treatment
   {
     id: 'wt-001',
-    name: 'Industrial Water Treatment System',
+    name: 'industrial FRP tank',
     category: 'water-treatment',
-    description: 'Advanced multi-stage water treatment system for industrial applications with high-capacity filtration.',
-    shortDescription: 'Industrial multi-stage water treatment',
+    description: 'High-performance fiberglass reinforced plastic (FRP) tank engineered for large-scale industrial water treatment applications. This durable tank provides exceptional chemical resistance and structural integrity for storing treated water, raw water, or intermediate processing stages. Built to withstand high pressures and corrosive conditions, industrial FRP tanks are ideal for municipal water systems, commercial facilities, and industrial plants requiring reliable, long-lasting water storage solutions with minimal maintenance.',
+    shortDescription: 'Durable industrial storage',
     image: '/images/FRP Tank for water treatment.jpeg',
-    features: ['Multi-stage filtration', 'High capacity', 'Energy efficient', 'Automated monitoring']
+    features: ['Chemical resistant', 'High capacity', 'Long lifespan', 'Industrial grade']
   },
   {
     id: 'wt-002',
-    name: 'Residential Water Purifier',
+    name: 'Mini RO/Undersink',
     category: 'water-treatment',
-    description: 'Complete home water purification system with activated carbon filters and UV sterilization.',
-    shortDescription: 'Home water purification system',
+    description: 'Compact point-of-use water purification solution perfect for kitchens and small spaces. This efficient Mini RO system combines reverse osmosis technology with multi-stage filtration to deliver crystal-clear, contaminant-free drinking water directly under your sink. Ideal for families seeking instant access to purified water without extensive installation, featuring low maintenance requirements, energy-efficient operation, and space-saving design that fits seamlessly into any home environment.',
+    shortDescription: 'Compact drinking water solution',
     image: '/images/Mini RO system or under sink.jpeg',
     features: ['UV sterilization', 'Carbon filtration', 'Compact design', 'Easy maintenance']
   },
   {
     id: 'wt-003',
-    name: 'Reverse Osmosis Unit',
+    name: 'Washable Membrane',
     category: 'water-treatment',
-    description: 'High-efficiency reverse osmosis system for removing dissolved solids and contaminants.',
-    shortDescription: 'Reverse osmosis water purification',
+    description: 'Advanced water purification system featuring innovative reusable washable membrane technology that maximizes efficiency and sustainability. This high-performance filtration solution utilizes durable, cleanable membranes that can be easily maintained without frequent replacements, significantly reducing operational costs and environmental impact. Perfect for industrial and residential applications, the washable membrane design achieves superior contaminant removal while providing exceptional durability, cost-effectiveness, and long-term reliability for consistent water quality assurance.',
+    shortDescription: 'Sustainable membrane filtration',
     image: '/images/Washable membrane, water treatment.jpeg',
     features: ['99.9% filtration', 'Low waste', 'Compact', 'Fast processing']
   },
@@ -46,7 +46,7 @@ export const products: Product[] = [
     category: 'pumps',
     description: 'Energy-efficient submersible pump for boreholes and deep wells.',
     shortDescription: 'Submersible borehole pump',
-    image: '/images/0.5hp.jpeg',
+    image: '/images/Submersible Pump 2HP.jpeg',
     features: ['2HP motor', 'Deep well capability', 'Corrosion resistant', 'Quiet operation']
   },
   {
@@ -55,86 +55,86 @@ export const products: Product[] = [
     category: 'pumps',
     description: 'Eco-friendly solar-powered pump system for remote locations and off-grid applications.',
     shortDescription: 'Solar pump system',
-    image: '/images/0.5hp.jpeg',
+    image: '/images/Solar Powered Pump System.jpeg',
     features: ['Solar powered', 'Low maintenance', 'Eco-friendly', 'Remote compatible']
   },
 
   // HDPE Pipes
   {
     id: 'hdpe-001',
-    name: 'HDPE Pipe 50mm',
+    name: 'HDPE Pipes',
     category: 'hdpe-pipes',
-    description: 'High-density polyethylene pipe for agricultural and water distribution networks.',
-    shortDescription: '50mm HDPE pipe roll',
+    description: 'Premium high-density polyethylene pipes available in multiple sizes from 25mm to 250mm diameter. Designed for agricultural, industrial, and water distribution networks, these durable HDPE pipes offer superior flexibility and chemical resistance. Perfect for irrigation systems, water supply lines, and specialized applications, providing long-lasting performance with minimal maintenance across all size ranges.',
+    shortDescription: '25mm-250mm HDPE pipe rolls',
     image: '/images/HDPE pipes.jpeg',
-    features: ['50mm diameter', 'High flexibility', 'Chemical resistant', 'Long lifespan']
+    features: ['25mm-250mm sizes', 'High flexibility', 'Chemical resistant', 'Long lifespan']
   },
   {
     id: 'hdpe-002',
-    name: 'HDPE Pipe 75mm',
-    category: 'hdpe-pipes',
-    description: 'Larger diameter HDPE pipe for main water distribution lines.',
-    shortDescription: '75mm HDPE pipe roll',
-    image: '/images/HDPE pipes.jpeg',
-    features: ['75mm diameter', 'High capacity', 'Flexible', 'Cost-effective']
+    name: 'Sanitary appliances',
+    category: 'sanitary-appliances',
+    description: 'Complete range of high-quality sanitary appliances designed for modern bathrooms and kitchens. Our collection features durable, stylish fixtures including wash basins, toilets, faucets, and accessories that combine functionality with elegant design. Each product is manufactured to international standards, ensuring reliability, easy installation, and long-term performance while maintaining superior hygiene standards for residential and commercial applications.',
+    shortDescription: 'Premium sanitary fixtures',
+    image: '/images/Sanitary appliances.jpeg',
+    features: ['Modern design', 'Durable quality', 'Easy installation', 'Hygienic standards']
   },
   {
     id: 'hdpe-003',
-    name: 'HDPE Pipe 100mm',
-    category: 'hdpe-pipes',
-    description: 'Large capacity HDPE pipe for irrigation and industrial applications.',
-    shortDescription: '100mm HDPE pipe roll',
-    image: '/images/HDPE pipes.jpeg',
-    features: ['100mm diameter', 'High capacity', 'Durable', 'Weather resistant']
+    name: 'Butt fusion fittings',
+    category: 'butt-fusion',
+    description: 'Professional-grade butt fusion fittings for seamless HDPE pipe connections in water distribution and industrial systems. These precision-engineered fittings create permanent, leak-proof joints that withstand high pressure and extreme conditions. Ideal for underground water lines, irrigation networks, and industrial applications, butt fusion fittings offer superior strength, reliability, and cost-effectiveness compared to traditional mechanical connections.',
+    shortDescription: 'Seamless fusion jointing',
+    image: '/images/Butt fusion fittings.jpeg',
+    features: ['Permanent joints', 'Leak-proof', 'High pressure rated', 'Cost-effective']
   },
 
   // PVC & UPVC
   {
     id: 'pvc-001',
-    name: 'PVC Coupling 32mm',
+    name: 'HDPE coupling',
     category: 'pvc-upvc',
-    description: 'Standard PVC coupling for joining 32mm pipes.',
-    shortDescription: 'PVC coupling 32mm',
+    description: 'Premium HDPE coupling designed for secure and flexible connections in water distribution systems. These high-quality couplings feature superior durability and chemical resistance, ideal for agricultural irrigation, industrial applications, and municipal water networks. With easy installation and long-lasting performance, HDPE couplings provide reliable joints that maintain system integrity while minimizing maintenance costs.',
+    shortDescription: 'Flexible pipe joining solution',
     image: '/images/HDPE coupling.jpeg',
-    features: ['32mm size', 'Easy installation', 'Durable', 'Cost-effective']
+    features: ['Chemical resistant', 'Easy installation', 'Durable', 'Cost-effective']
   },
   {
     id: 'pvc-002',
-    name: 'UPVC Pipe 25mm',
+    name: 'ball valve union type',
     category: 'pvc-upvc',
-    description: 'Unplasticized PVC pipe for pressure applications.',
-    shortDescription: 'UPVC pressure pipe 25mm',
+    description: 'Advanced ball valve union fitting combining ball valve functionality with union-type connection design for superior versatility. Perfect for applications requiring easy connect-disconnect capability without specialized tools, these union-type ball valves offer reliable flow control and maintenance accessibility. Ideal for water systems, irrigation networks, and industrial applications where quick repairs and adjustments are essential.',
+    shortDescription: 'Quick-disconnect flow control',
     image: '/images/Pvc ball valves.jpeg',
-    features: ['25mm diameter', 'High pressure rated', 'Long lifespan', 'Corrosion resistant']
+    features: ['Quick disconnect', 'Ball valve control', 'Easy maintenance', 'Corrosion resistant']
   },
   {
     id: 'pvc-003',
-    name: 'PVC Fitting Set',
+    name: 'IPS fittings',
     category: 'pvc-upvc',
-    description: 'Complete set of PVC fittings and connectors.',
-    shortDescription: 'PVC fitting set',
+    description: 'Professional-grade IPS (Iron Pipe Size) fittings engineered for reliable pipe connections in plumbing and water distribution systems. This comprehensive collection includes all essential IPS fittings designed for seamless integration with standard piping systems. Manufactured to strict quality standards, IPS fittings ensure secure, leak-proof connections with durability and ease of installation for residential, commercial, and industrial applications.',
+    shortDescription: 'Standard pipe sizing solutions',
     image: '/images/Ips fitting.jpeg',
-    features: ['Multiple sizes', 'Complete set', 'Easy assembly', 'Quality assured']
+    features: ['Iron pipe size standard', 'Complete collection', 'Leak-proof', 'Quality assured']
   },
 
   // PPR Pipes
   {
     id: 'ppr-001',
-    name: 'PPR Pipe 20mm',
+    name: 'IPS strait tee',
     category: 'ppr',
-    description: 'Polypropylene random copolymer pipe for hot and cold water applications.',
-    shortDescription: 'PPR pipe 20mm',
+    description: 'Precision-engineered IPS straight tee fitting for creating three-way branch connections in plumbing and water systems. These high-performance tee fittings enable efficient flow distribution at 90-degree angles with maximum flow capacity. Designed for hot and cold water applications, IPS strait tees provide reliable, leak-proof connections that maintain system pressure and durability across residential, commercial, and industrial installations.',
+    shortDescription: 'Three-way flow distribution',
     image: '/images/Ips tee.jpeg',
-    features: ['20mm diameter', 'Hot water rated', 'Long lifespan', 'Easy installation']
+    features: ['90-degree branch', 'Equal flow distribution', 'Hot/cold rated', 'Easy installation']
   },
   {
     id: 'ppr-002',
-    name: 'PPR Fitting Kit',
+    name: 'HDPE flanged adaptor',
     category: 'ppr',
-    description: 'Complete PPR fitting kit with all necessary connectors and adapters.',
-    shortDescription: 'PPR fitting kit',
+    description: 'Innovative HDPE flanged adaptor enabling secure connections between HDPE pipes and flanged components in water distribution and industrial systems. These specialized adaptors feature robust flange design for maximum grip and stability, ideal for high-pressure applications and critical installations. Perfect for retrofitting existing systems, upgrades, and specialized piping configurations requiring reliable adapter connections.',
+    shortDescription: 'Flanged pipe connection system',
     image: '/images/HDPE Flanged adaptor.jpeg',
-    features: ['Multiple fittings', 'Compatible sizes', 'High quality', 'Easy connection']
+    features: ['Flanged design', 'High pressure rated', 'Stable connection', 'Versatile compatibility']
   },
 
   // Valves
@@ -216,12 +216,12 @@ export const products: Product[] = [
   },
   {
     id: 'valve-006',
-    name: 'Air Release Valve Dual',
+    name: 'sluice valve/gate valve',
     category: 'valves',
-    description: 'Dual-chamber air release valve for large diameter piping systems.',
-    shortDescription: 'Dual air release valve',
+    description: 'Versatile sluice/gate valve combining two essential valve functions for comprehensive flow control in water systems. These heavy-duty valves feature sliding gate mechanisms that provide on-off control with minimal pressure drop. Perfect for water distribution networks, irrigation systems, and industrial applications requiring reliable shut-off capability and easy operation, sluice/gate valves deliver dependable performance for critical water management applications.',
+    shortDescription: 'Dual-function flow control',
     image: '/images/Air release valve 1.jpeg',
-    features: ['Dual chamber', 'High capacity', 'Corrosion resistant', 'Weather proof']
+    features: ['Sliding gate design', 'Low pressure drop', 'Easy operation', 'Weather proof']
   },
   {
     id: 'valve-007',
@@ -283,12 +283,12 @@ export const products: Product[] = [
   },
   {
     id: 'valve-013',
-    name: 'Reducing Valve',
+    name: 'flanged reducing valve',
     category: 'valves',
-    description: 'Pressure reducing valve to maintain consistent pressure throughout water systems.',
-    shortDescription: 'Pressure reducing valve',
+    description: 'Advanced flanged reducing valve providing precise pressure reduction for complex water distribution and industrial systems. This specialized valve features flanged connections and adjustable pressure settings for superior flow management and safety. Ideal for high-pressure pipelines and critical industrial applications, flanged reducing valves ensure system protection while maintaining controlled pressure throughout your water network.',
+    shortDescription: 'Precision pressure control',
     image: '/images/Reducing valves.jpeg',
-    features: ['Pressure regulation', 'Flow control', 'Adjustable setting', 'Durable']
+    features: ['Dual release function', 'Flanged connection', 'Adjustable setting', 'Industrial grade']
   },
   {
     id: 'valve-014',
@@ -770,12 +770,21 @@ export const products: Product[] = [
   },
   {
     id: 'acc-006',
-    name: 'Water Treatment Equipment Set',
+    name: 'complete R.O machine',
     category: 'water-treatment',
-    description: 'Complete water treatment equipment set for comprehensive home or small-scale applications.',
-    shortDescription: 'Water treatment equipment',
+    description: 'Full-featured reverse osmosis (R.O) machine delivering professional-grade water purification for homes and small businesses. This comprehensive system includes pre-filtration, reverse osmosis membrane, post-filtration, and storage components working together to produce pure, clean drinking water. Designed for easy installation and minimal maintenance, complete R.O machines provide reliable water purification with exceptional purity levels for health-conscious consumers.',
+    shortDescription: 'Complete purification system',
     image: '/images/water treatment equipment.jpeg',
-    features: ['Complete system', 'Multi-stage', 'Easy installation', 'Effective treatment']
+    features: ['Complete RO system', 'Multi-stage filtration', 'Easy installation', 'High purity water']
+  },
+  {
+    id: 'acc-007',
+    name: 'water treatment accessories',
+    category: 'water-treatment',
+    description: 'Comprehensive range of essential water treatment accessories designed to enhance and maintain water purification systems. This collection includes replacement filters, connectors, valves, tubing, and specialized components for optimal system performance. Perfect for upgrades and replacements, water treatment accessories ensure your system operates at peak efficiency while extending equipment lifespan and maintaining superior water quality.',
+    shortDescription: 'Maintenance & replacement parts',
+    image: '/images/water treatment accessories.jpeg',
+    features: ['Multiple components', 'Quality parts', 'Easy replacement', 'System compatible']
   },
 ];
 

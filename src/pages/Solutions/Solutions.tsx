@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { HeroSection } from "../../components/common/HeroSection";
 import { SectionHeader } from "../../components/common/SectionHeader";
 import { SolutionCard } from "../../components/solutions/SolutionCard";
+import { SolutionModal } from "../../components/solutions/SolutionModal";
 import { CTASection } from "../../components/common/CTASection";
 import { solutionService } from "../../services/solutionService";
 import type { Solution } from "../../types";
@@ -10,6 +11,8 @@ import type { Solution } from "../../types";
 export const Solutions = () => {
   const [solutions, setSolutions] = useState<Solution[]>([]);
   const [loading, setLoading] = useState(true);
+  const [selectedSolution, setSelectedSolution] = useState<Solution | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const loadSolutions = async () => {
@@ -19,6 +22,16 @@ export const Solutions = () => {
     };
     loadSolutions();
   }, []);
+
+  const handleLearnMore = (solution: Solution) => {
+    setSelectedSolution(solution);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedSolution(null), 300);
+  };
 
   return (
     <>
@@ -33,7 +46,7 @@ export const Solutions = () => {
 
       {/* Hero Section */}
       <HeroSection
-        title="Water Solutions"
+        title="Our Water Solution"
         subtitle="Tailored water management systems for every challenge"
         backgroundImage="/Hero baner.png"
       />
@@ -49,18 +62,26 @@ export const Solutions = () => {
           {loading ? (
             <div className="text-center py-12">Loading solutions...</div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {solutions.map((solution, idx) => (
                 <SolutionCard
                   key={solution.id}
                   solution={solution}
                   index={idx}
+                  onLearnMore={handleLearnMore}
                 />
               ))}
             </div>
           )}
         </div>
       </section>
+
+      {/* Solution Modal */}
+      <SolutionModal
+        solution={selectedSolution}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
 
       {/* Detailed Solutions Info */}
       <section className="py-16 md:py-24 bg-light-secondary">
