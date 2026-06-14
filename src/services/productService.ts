@@ -78,7 +78,7 @@ export const productService = {
           'wt-005',    // Reverse Osmosis Undersink System
           'pump-005',  // Centrifugal Pump Irrigation
           'irr-007',   // Rain Hose for Irrigation Standard
-          'ppr-004',   // PPR Pipes Standard
+          'san-001',   // Sanitary appliances full set
           'meter-004', // Super Meter Half Size
           'pvc-005',   // PVC Fittings Complete Set
           'ppr-005',   // PPR Fittings Professional

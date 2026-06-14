@@ -79,6 +79,15 @@ export const products: Product[] = [
     features: ['Modern design', 'Durable quality', 'Easy installation', 'Hygienic standards']
   },
   {
+    id: 'san-001',
+    name: 'Sanitary appliances full set',
+    category: 'sanitary-appliances',
+    description: 'Complete premium sanitary appliances collection featuring a full set of modern bathroom and kitchen fixtures. This comprehensive package includes high-quality wash basins, toilets, faucets, and coordinated accessories designed for contemporary spaces. Each item is manufactured to international standards with elegant design, superior durability, and easy installation, making it perfect for complete bathroom renovations and new construction projects.',
+    shortDescription: 'Complete bathroom fixtures set',
+    image: '/images/Sanitary appliances full set.jpeg',
+    features: ['Complete set', 'Modern design', 'Premium quality', 'Easy installation']
+  },
+  {
     id: 'hdpe-003',
     name: 'Butt fusion fittings',
     category: 'butt-fusion',
