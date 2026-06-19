@@ -122,8 +122,8 @@ export const Home = () => {
               <FaEarthAfrica className="text-lg sm:text-xl lg:text-2xl" />
             </div>
             <div className="min-w-0 uppercase leading-none">
-              <p className="text-lg font-black tracking-wide text-[#113fae] sm:text-xl lg:text-2xl">Wan Afrika</p>
-              <p className="text-base font-light tracking-[0.14em] text-[#0fa9e4] sm:text-lg lg:text-xl">Traders</p>
+              <p className="text-lg font-black tracking-wide text-[#113fae] sm:text-xl lg:text-2xl">Waan Afrika</p>
+              <p className="text-base font-light tracking-[0.14em] text-[#0fa9e4] sm:text-lg lg:text-xl">Water Solution</p>
               <p className="mt-0.5 text-[10px] font-semibold normal-case tracking-normal text-[#09275c] sm:text-[11px]">Complete Water Solutions for Africa</p>
             </div>
           </div>
