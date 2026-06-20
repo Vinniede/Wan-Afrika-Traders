@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { SectionHeader } from './SectionHeader';
 import type { Partner } from '../../data/partners';
 
@@ -67,12 +68,12 @@ export const Partners = ({ partners }: PartnersProps) => {
           <p className="text-slate-600 mb-4">
             Interested in becoming a partner? Let's grow together!
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-block rounded-lg bg-primary-blue px-8 py-3 font-bold text-white transition-all hover:bg-dark-primary hover:-translate-y-0.5 hover:shadow-lg"
           >
             Become a Partner
-          </a>
+          </Link>
         </div>
       </div>
     </section>

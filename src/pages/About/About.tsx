@@ -355,7 +355,7 @@ export const About = () => {
                 <div className="relative z-10 flex flex-col justify-center flex-1 text-center md:text-left">
                   <div>
                     <h3 className="text-2xl font-bold text-dark-primary mb-1">
-                      Waan Afrika CEO
+                      Waan Africa
                     </h3>
                     <p className="text-primary-blue font-semibold mb-4 text-sm uppercase tracking-wide">
                       Chief Executive Officer

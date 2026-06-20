@@ -101,7 +101,7 @@ export const products: Product[] = [
   {
     id: 'pvc-001',
     name: 'HDPE coupling',
-    category: 'pvc-upvc',
+    category: 'hdpe-pipes',
     description: 'Premium HDPE coupling designed for secure and flexible connections in water distribution systems. These high-quality couplings feature superior durability and chemical resistance, ideal for agricultural irrigation, industrial applications, and municipal water networks. With easy installation and long-lasting performance, HDPE couplings provide reliable joints that maintain system integrity while minimizing maintenance costs.',
     shortDescription: 'Flexible pipe joining solution',
     image: '/images/HDPE coupling.jpeg',
@@ -139,7 +139,7 @@ export const products: Product[] = [
   {
     id: 'ppr-002',
     name: 'HDPE flanged adaptor',
-    category: 'ppr',
+    category: 'hdpe-pipes',
     description: 'Innovative HDPE flanged adaptor enabling secure connections between HDPE pipes and flanged components in water distribution and industrial systems. These specialized adaptors feature robust flange design for maximum grip and stability, ideal for high-pressure applications and critical installations. Perfect for retrofitting existing systems, upgrades, and specialized piping configurations requiring reliable adapter connections.',
     shortDescription: 'Flanged pipe connection system',
     image: '/images/HDPE Flanged adaptor.jpeg',
@@ -349,7 +349,7 @@ export const products: Product[] = [
   {
     id: 'fitting-001',
     name: 'Flanged Adaptor',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: 'Flanged adaptor for connecting flange pipes to standard pipes.',
     shortDescription: 'Flanged pipe adaptor',
     image: '/images/Flanged adaptor.jpeg',
@@ -358,7 +358,7 @@ export const products: Product[] = [
   {
     id: 'fitting-002',
     name: 'Threaded and Weldon Flanges',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: 'Combined threaded and weldon flanges for flexible piping connections.',
     shortDescription: 'Threaded & Weldon flanges',
     image: '/images/Threaded and Weldon Flanges.jpeg',
@@ -367,7 +367,7 @@ export const products: Product[] = [
   {
     id: 'fitting-003',
     name: 'VJ Coupling',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: 'VJ coupling for joining HDPE and PVC pipes in water distribution systems.',
     shortDescription: 'VJ pipe coupling',
     image: '/images/Vj coupling.jpeg',
@@ -621,7 +621,7 @@ export const products: Product[] = [
   {
     id: 'fitting-004',
     name: 'Flanged Adaptor Type 1',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: 'Flanged adaptor for seamless connection between flanged and threaded pipes.',
     shortDescription: 'Flanged adaptor type 1',
     image: '/images/Flanged adaptor 1.jpeg',
@@ -639,7 +639,7 @@ export const products: Product[] = [
   {
     id: 'fitting-006',
     name: 'Flanged 45° Elbow',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: 'Flanged 45-degree elbow for directional pipe changes in water systems.',
     shortDescription: 'Flanged 45° elbow',
     image: '/images/Flanged 45° elbow.jpeg',
@@ -648,7 +648,7 @@ export const products: Product[] = [
   {
     id: 'fitting-007',
     name: 'Flanged Fabricated Straight Tee',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: 'Custom-fabricated flanged straight tee for equal-diameter pipe junctions.',
     shortDescription: 'Flanged straight tee',
     image: '/images/Flanged Fabricated Straight tee.jpeg',
@@ -666,7 +666,7 @@ export const products: Product[] = [
   {
     id: 'fitting-008',
     name: 'Flanged Reducing Tee',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: 'Flanged reducing tee for connecting different-sized diameter pipes.',
     shortDescription: 'Flanged reducing tee',
     image: '/images/Flanged reducing Tee.jpeg',
@@ -693,7 +693,7 @@ export const products: Product[] = [
   {
     id: 'fitting-009',
     name: 'Flanged Y Strainer',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: 'Flanged Y-strainer for filtering debris from water systems.',
     shortDescription: 'Flanged Y strainer',
     image: '/images/Flanged Y strainer.jpeg',
@@ -888,7 +888,7 @@ export const products: Product[] = [
   {
     id: 'fitting-012',
     name: 'Flanged Pipe 8-inch',
-    category: 'pvc-upvc',
+    category: 'valves',
     description: '8-inch flanged pipe for large-diameter water distribution and industrial applications.',
     shortDescription: 'Flanged pipe 8-inch',
     image: '/images/Flanged pipe 8.jpeg',
@@ -902,6 +902,51 @@ export const products: Product[] = [
     shortDescription: 'Valve category collection',
     image: '/images/Valves Category.jpeg',
     features: ['Complete variety', 'Reference guide', 'All types', 'Visual catalog']
+  },
+  {
+    id: 'irr-012',
+    name: 'Drip Irrigation Tape',
+    category: 'irrigation',
+    description: 'Professional-grade drip irrigation tape designed specifically for agricultural irrigation systems. This flexible tape features precise drip emission points that deliver water directly to plant roots, minimizing water waste and maximizing crop yield. Perfect for large-scale farming, greenhouses, and landscape irrigation, drip irrigation tape provides efficient water distribution with adjustable flow rates for optimal plant nutrition and growth.',
+    shortDescription: 'Drip tape for irrigation',
+    image: '/images/Drip irrigation tape-irrigation category.jpeg',
+    features: ['Precise drip points', 'Flexible design', 'Water efficient', 'Easy installation']
+  },
+  {
+    id: 'irr-013',
+    name: 'Drip Tape & Rain Hose Combo',
+    category: 'irrigation',
+    description: 'Complete drip tape and rain hose combination system for versatile irrigation applications. This integrated solution combines precision drip technology with flexible rain hose capability for both targeted and broad-area watering. Perfect for mixed agricultural operations, it provides flexibility for different irrigation needs including drip lines for sensitive plants and rain hose for general landscaping and large-area irrigation.',
+    shortDescription: 'Drip tape & rain hose combo',
+    image: '/images/Drip tape & rain hose.jpeg',
+    features: ['Combination system', 'Versatile', 'Dual function', 'Professional grade']
+  },
+  {
+    id: 'cpvc-002',
+    name: 'UPVC CPVC PVC Glue Adhesive',
+    category: 'cpvc-fittings',
+    description: 'High-performance adhesive glue specifically formulated for joining UPVC, CPVC, and PVC pipes and fittings. This professional-grade bonding agent creates permanent, leak-proof joints with excellent chemical resistance and durability. Ideal for water systems, irrigation networks, and industrial applications, UPVC/CPVC/PVC glue ensures reliable pipe connections that withstand high pressures and temperature variations for long-lasting system integrity.',
+    shortDescription: 'UPVC/CPVC/PVC bonding agent',
+    image: '/images/Era UPVC , CPVC , PVC Glue.jpeg',
+    features: ['High-performance bond', 'Chemical resistant', 'Temperature stable', 'Professional grade']
+  },
+  {
+    id: 'fitting-013',
+    name: 'Fabricated Flanged Reducers',
+    category: 'valves',
+    description: 'Custom-fabricated flanged reducers for connecting different-sized diameter flanged pipes in water distribution and industrial systems. These precision-engineered reducers feature robust flange connections that enable smooth size transitions while maintaining system integrity. Perfect for complex piping networks, retrofitting, and specialized applications requiring reliable reducer connections.',
+    shortDescription: 'Fabricated pipe reducers',
+    image: '/images/Fabricated flanged  reducers.jpeg',
+    features: ['Fabricated quality', 'Flanged connection', 'Size transition', 'Industrial rated']
+  },
+  {
+    id: 'irr-014',
+    name: 'Irrigation Fittings System',
+    category: 'irrigation',
+    description: 'Complete irrigation fittings system including connectors, tees, elbows, and adapters for comprehensive irrigation network assembly. These professional-grade fittings are designed for seamless integration with irrigation hoses and drip systems. Perfect for designing and building custom irrigation solutions for gardens, farms, and landscaping projects.',
+    shortDescription: 'Irrigation fittings system',
+    image: '/images/Irrigation fittings-irrigation category.jpeg',
+    features: ['Complete range', 'Professional grade', 'Easy assembly', 'Versatile compatibility']
   },
 ];
 
