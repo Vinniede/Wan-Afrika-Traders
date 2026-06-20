@@ -328,7 +328,7 @@ export const About = () => {
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            {/* Waan Afrika CEO */}}
+            {/* Waan Afrika CEO */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
