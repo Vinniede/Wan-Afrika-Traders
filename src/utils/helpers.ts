@@ -13,13 +13,13 @@ export const formatPhoneForWhatsApp = (phone: string): string => {
   // Remove all non-numeric characters
   const cleaned = phone.replace(/\D/g, '');
   // Add country code if not present
-  if (cleaned.startsWith('234')) {
+  if (cleaned.startsWith('254')) {
     return cleaned;
   }
   if (cleaned.startsWith('0')) {
-    return '234' + cleaned.substring(1);
+    return '254' + cleaned.substring(1);
   }
-  return '234' + cleaned;
+  return '254' + cleaned;
 };
 
 // Generate WhatsApp message

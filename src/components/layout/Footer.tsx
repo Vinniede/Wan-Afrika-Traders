@@ -12,7 +12,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-3 flex items-center gap-3">
-              <img src="/favicon.jpg" alt="Waan Afrika Water Solution Logo" className="w-12 h-12 rounded-lg object-cover shadow-lg ring-2 ring-primary-cyan" />
+              <img src="/favicon.jpeg" alt="Waan Afrika Water Solution Logo" className="w-12 h-12 rounded-lg object-contain shadow-lg ring-2 ring-primary-cyan" />
               <div>
                 <h3 className="font-bold text-base">WAAN AFRIKA WATER SOLUTION</h3>
                 <p className="text-xs text-primary-200">Water Solutions</p>
@@ -68,7 +68,7 @@ export const Footer = () => {
                 <FaWhatsapp size={14} className="text-green-400 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-xs text-primary-200">WhatsApp & Emergency:</p>
-                  <a href={`https://wa.me/${CONTACT_INFO.phone.whatsapp.replace(/^0/, '254')}`} className="hover:text-primary-cyan transition font-semibold" target="_blank" rel="noopener noreferrer">
+                  <a href={`https://wa.me/${CONTACT_INFO.phone.whatsapp.replace(/^\+?/, '')}`} className="hover:text-primary-cyan transition font-semibold" target="_blank" rel="noopener noreferrer">
                     {CONTACT_INFO.phone.whatsapp}
                   </a>
                 </div>

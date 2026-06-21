@@ -2,9 +2,9 @@
 export const CONTACT_INFO = {
   // Phone numbers
   phone: {
-    calls: '0722803037',
-    whatsapp: '0757620608',
-    emergency: '0757620608',
+    calls: '+254722803037',
+    whatsapp: '+254757620608',
+    emergency: '+254757620608',
   },
   
   // Email

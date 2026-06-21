@@ -4,7 +4,7 @@ import { CONTACT_INFO } from '../../constants/contact';
 
 export const FloatingWhatsAppButton = () => {
   // Convert phone number to international format (add country code if needed)
-  const whatsappNumber = CONTACT_INFO.phone.whatsapp.replace(/^0/, '254'); // Kenya country code
+  const whatsappNumber = CONTACT_INFO.phone.whatsapp.replace(/^\+?/, ''); // Remove + prefix for WhatsApp link
   const message = encodeURIComponent(CONTACT_INFO.whatsappMessage);
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
 

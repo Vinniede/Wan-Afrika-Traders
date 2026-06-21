@@ -66,7 +66,7 @@ export const projects: Project[] = [
     title: 'Shopping Mall Water System',
     category: 'commercial',
     description: 'Complete water supply, treatment, and distribution system for a large commercial shopping complex. Includes backup storage and emergency systems.',
-    image: '/projects/Shopping mall water system.jpeg',
+    image: '/Projects/Shopping mall water system.jpeg',
     location: 'Nairobi, Kenya',
     completionDate: '2024-04-05',
     galleryImages: [
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     title: 'Residential Complex Water Network',
     category: 'commercial',
     description: 'Complete water infrastructure for a 2,000-unit residential complex. Includes treatment, storage, and distribution systems with real-time monitoring.',
-    image: '/projects/Residential Complex Water Network.jpeg',
+    image: '/Projects/Residential Complex Water Network.jpeg',
     location: 'Westlands, Nairobi, Kenya',
     completionDate: '2023-11-10',
     galleryImages: [
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     title: 'Community Borehole Network System',
     category: 'borehole',
     description: 'Comprehensive borehole network infrastructure serving multiple community water points. System includes drilling, pumping equipment, storage tanks, and distribution lines ensuring reliable water access for agricultural and domestic use.',
-    image: '/projects/Community Borehole Network.jpeg',
+    image: '/Projects/Community Borehole Network.jpeg',
     location: 'Trans Nzoia County, Kenya',
     completionDate: '2024-02-10',
     galleryImages: [
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     title: 'Large-Scale Irrigation System Expansion',
     category: 'irrigation',
     description: 'Expanded irrigation infrastructure for large-scale agricultural operations. Includes network of drip irrigation lines, rain guns, pumping stations, and automation controls optimizing water efficiency across 1,000+ hectares.',
-    image: '/projects/Irrigation system-projects.jpeg',
+    image: '/Projects/Irrigation system-projects.jpeg',
     location: 'Kitale, Trans Nzoia County, Kenya',
     completionDate: '2024-05-22',
     galleryImages: [
@@ -149,7 +149,7 @@ export const projects: Project[] = [
     title: 'Advanced Sprinkler System Installation',
     category: 'irrigation',
     description: 'State-of-the-art sprinkler irrigation system for commercial horticultural operation. Features programmable controllers, multiple irrigation zones, and weather-responsive automation for optimal water utilization and crop management.',
-    image: '/projects/Sprinklers- projects.jpeg',
+    image: '/Projects/Sprinklers- projects.jpeg',
     location: 'Nairobi Agricultural Zone, Kenya',
     completionDate: '2024-03-28',
     galleryImages: [
