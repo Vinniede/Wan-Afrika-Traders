@@ -37,7 +37,7 @@ export const Partners = ({ partners }: PartnersProps) => {
                   <img 
                     src={partner.logo} 
                     alt={partner.name}
-                    className="h-20 w-auto object-contain px-2"
+                    className="h-24 w-auto object-contain px-2"
                   />
                 ) : (
                   <div className="text-center px-2">

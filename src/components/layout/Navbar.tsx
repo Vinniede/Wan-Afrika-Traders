@@ -25,7 +25,7 @@ export const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between px-4 py-3 sm:py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group hover:opacity-80 transition">
-          <img src="/favicon.jpeg" alt="Waan Afrika Water Solution Logo" className="w-11 h-11 rounded-lg object-contain shadow-md ring-2 ring-white/30 group-hover:ring-white transition-all" />
+          <img src="/favicon.jpeg" alt="Waan Afrika Water Solution Logo" className="w-16 h-16 rounded-lg object-contain shadow-md ring-2 ring-white/30 group-hover:ring-white transition-all" />
           <div className="hidden sm:block">
             <h1 className="font-bold text-sm md:text-base text-white group-hover:text-white/90 transition leading-tight">WAAN AFRIKA WATER SOLUTION</h1>
             <p className="text-xs font-semibold uppercase tracking-[0.15em] text-blue-100">Water Solutions</p>

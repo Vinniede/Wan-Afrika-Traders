@@ -12,7 +12,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-3 flex items-center gap-3">
-              <img src="/favicon.jpeg" alt="Waan Afrika Water Solution Logo" className="w-12 h-12 rounded-lg object-contain shadow-lg ring-2 ring-primary-cyan" />
+              <img src="/favicon.jpeg" alt="Waan Afrika Water Solution Logo" className="w-16 h-16 rounded-lg object-contain shadow-lg ring-2 ring-primary-cyan" />
               <div>
                 <h3 className="font-bold text-base">WAAN AFRIKA WATER SOLUTION</h3>
                 <p className="text-xs text-primary-200">Water Solutions</p>

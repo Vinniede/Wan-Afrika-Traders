@@ -135,7 +135,7 @@ export const Checkout = () => {
               animate={{ scale: 1 }}
               className="mb-6"
             >
-              <img src="/favicon.jpeg" alt="Waan Afrika Water Solution Logo" className="h-24 w-24 rounded-xl shadow-lg mx-auto mb-4 object-contain" />
+              <img src="/favicon.jpeg" alt="Waan Afrika Water Solution Logo" className="h-32 w-32 rounded-xl shadow-lg mx-auto mb-4 object-contain" />
               <FaCircleCheck className="mx-auto text-7xl text-primary-cyan" />
             </motion.div>
             <h2 className="mb-4 text-3xl font-bold text-dark-primary sm:text-4xl">Thank You!</h2>
