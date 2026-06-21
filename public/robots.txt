@@ -1,0 +1,14 @@
+# Robots.txt for Waan Afrika Water Solution
+# Allow search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /dist/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://waanafrica.com/sitemap.xml
+
+# Crawl delay and request rate
+Crawl-delay: 1
+Request-rate: 30/60
