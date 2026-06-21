@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { HeroSection } from '../../components/common/HeroSection';
 import { useCatalogue } from '../../hooks/useCatalogue';
 import { quoteService } from '../../services/contactService';
+import { CONTACT_INFO } from '../../constants/contact';
 import { generateWhatsAppMessage, formatPhoneForWhatsApp } from '../../utils/helpers';
 import { motion } from 'framer-motion';
 import { FaCartShopping, FaCircleCheck, FaComment, FaPaperPlane } from 'react-icons/fa6';
@@ -42,9 +43,10 @@ export const Checkout = () => {
       formData.additionalNotes
     );
 
-    const phoneNumber = formatPhoneForWhatsApp(formData.phoneNumber);
+    // Send to company's WhatsApp number, not user's phone
+    const companyWhatsApp = CONTACT_INFO.phone.whatsapp.replace(/^\+?/, '');
     const encodedMessage = encodeURIComponent(message);
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    const whatsappLink = `https://wa.me/${companyWhatsApp}?text=${encodedMessage}`;
 
     window.open(whatsappLink, '_blank');
     handleSubmitSuccess();
